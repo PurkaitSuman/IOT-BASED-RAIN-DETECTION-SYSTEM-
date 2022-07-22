@@ -64,33 +64,37 @@ Raindrop sensor is basically a board on which nickel is coated in the form of li
 
 
 # PROJECT STEPS
-Step 1
+# Step 1
 Firstly, identify these components.
-  
-                   ESP8266 Nodemcu                              Rain sensor
 
-  
-                            LED                                       Breadboard                            
-                          Jumper wires
+1.ESP8266 Nodemcu                              
+2.Rain sensor
+3.LED   
+4.Jumper wires                                                                                            
+5.Breadboard                          
 
-Step 2
+# Step 2
 Secondly, connect these components. To do this, use the circuit diagram below.
 
  ![image](https://user-images.githubusercontent.com/65341291/180372135-d41ad4bc-09b0-426d-a84b-be1aedc29b3a.png)
 
 
-Step 3
+# Step 3
 Thirdly, we set up the Thingspeak app. To do this, follow the steps below.
 •	First, go to the Thingspeak website and create a new account using my email address. Then, click the “New channel” button.
 
  ![image](https://user-images.githubusercontent.com/65341291/180372191-acfa3d33-f04a-4d4b-93d8-929a4844d73f.png)
+ 
 ![image](https://user-images.githubusercontent.com/65341291/180372215-474c9ec6-ed6c-46a2-a6be-12dff7687b71.png)
+
 ![image](https://user-images.githubusercontent.com/65341291/180372239-ac2b4f62-b4a9-47aa-be23-c26a28448704.png)
 
 Next, enter my project name as my like. Then, activate the four fields and name “Rain_level”. After, click the “Save channel” button.
 
  ![image](https://user-images.githubusercontent.com/65341291/180372251-94149f06-392f-48a9-aefc-7e2fd70d0513.png)
+ 
 ![image](https://user-images.githubusercontent.com/65341291/180372346-ca8de9f1-c70a-449f-849f-42c5b7108431.png)
+
 ![image](https://user-images.githubusercontent.com/65341291/180372366-7f0b3f74-8df1-4061-b05f-0514f39a7eeb.png)
 
   
@@ -99,7 +103,7 @@ Next, enter my project name as my like. Then, activate the four fields and name 
  ![image](https://user-images.githubusercontent.com/65341291/180372390-e70c6afe-4cca-48d7-b64a-ba0558e94e5d.png)
 
 
-Step 4
+# Step 4
 Now, let’s create the program for this project. It is as follows.
 •	WI-Fi library — Download
 Code:
@@ -138,9 +142,11 @@ void loop()
 }
 
 
-Step 6
+# Step 5
 Now, go back to the Thingspeak app and click the private view tab. 
+
  ![image](https://user-images.githubusercontent.com/65341291/180372041-338b55b0-4036-4e6f-9ae6-cb2ee62e99ab.png)
+ 
 ![image](https://user-images.githubusercontent.com/65341291/180372079-895dda5d-cfff-4641-b6f4-bdfc58522b74.png)
 
  
@@ -166,11 +172,14 @@ In the void loop, the analogRead command reads the value from the sensor. In the
 A simple Rain Detection System can be easily built by interfacing an Arduino with Rain Sensor. The sensor will detect any rainfall falling on it and the Arduino board will sense it and can perform required actions. A system like this can be used in many different fields, such as agriculture and automobile fields. Rainfall detection can be used to automatically regulate the Irrigation process. Also, continuous rainfall data can help farmers use this smart system to automatically water the crop only when absolutely required. Similarly, in the automobiles sector windshield wipers can be made fully automatic by using the rain detection system. And the Home Automation Systems can also use rain detection to automatically close windows and adjust room temperature. In this tutorial, we will build a basic rain sensor using Arduino with a buzzer. You can then use this set-up to build anything you wish on top of it. Also, note that the rain sensor module is also referred to as a raindrop sensor or rain gauge sensor or rainwater sensor based on usage, but they all refer to the same sensor used in this project and they all work on the same principle.
 We have also built a simple Rain Alarm and an automatic car wiper by using 555 Timer only, you might want to check that as well if you do not want to use an Arduino.That being said, let’s get back to this project and start building our Arduino Rain Gauge.
 
-REFERENCES
+# REFERENCES
 
 ThingSpeak:https://thingspeak.com/channels/1510198/private_show
+
 Arduino: https://www.arduino.cc
+
 Rain Sensor :https://lastminuteengineers.com/rain-sensor-arduino-tutorial
+
 ESP8266 NodeMCU:https://lastminuteengineers.com/esp8266-nodemcu-arduino-tutorial/
 
 
